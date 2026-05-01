@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Mohamed Ahmed</title>
+    <title>CV - Mahmoud Ahmed</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="MyPhoto"/>
     <style>
         * {
             margin: 0;
@@ -42,20 +41,14 @@
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
-            border: 5px solid #fff;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 8px solid #fff;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
             animation: float 3s ease-in-out infinite;
-            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            color: white;
-            margin: 0 auto 20px;
-            cursor: pointer;
+            display: inline-block;
+            margin: 0 auto 30px;
             position: relative;
             overflow: hidden;
         }
@@ -67,28 +60,6 @@
             border-radius: 50%;
         }
 
-        .profile-img .upload-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            border-radius: 50%;
-        }
-
-        .profile-img:hover .upload-overlay {
-            opacity: 1;
-        }
-
-        .profile-input {
-            display:MyPhoto;
-        }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
@@ -359,16 +330,11 @@
 
     <div class="container">
         <header class="header">
-            <div class="profile-img" onclick="document.getElementById('photoInput').click()">
-                <i class="fas fa-user" id="profileIcon"></i>
-                <img id="profileImage" style="display: none;" alt="Profile">
-                <div class="upload-overlay">
-                    <i class="fas fa-camera" style="color: white; font-size: 24px;"></i>
-                </div>
-                <input type="file" id="photoInput" class="profile-input" accept="image/*" onchange="handlePhotoUpload(event)">
+            <div class="profile-img">
+                <img id="profileImage" src="MyPhoto.jpeg" alt="Profile">
             </div>
-            <h1 class="name" data-ar="محمد أحمد" data-en="Mohamed Ahmed">محمد أحمد</h1>
-            <p class="title" data-ar="اهدف للتخصص في الأمن السيبراني" data-en="My goal is to specialize in cybersecurity.">اهدف للتخصص في الأمن السيبراني</p>
+            <h1 class="name" data-ar="محمود أحمد" data-en="Mahmoud Ahmed">محمود أحمد</h1>
+            <p class="title" data-ar="طالب يهدف للتخصص في الأمن السيبراني" data-en="A student aiming to specialize in cybersecurity">طالب يهدف للتخصص في الأمن السيبراني</p>
         </header>
 
         <main class="main-content">
@@ -376,7 +342,7 @@
                 <h2 class="section-title" data-ar="أهدافي" data-en="My Goals">أهدافي</h2>
                 <div class="goals-content">
                     <p class="goals-text" data-ar="هدفي الأساسي هو أن أصبح محترفًا في مجال الأمن السيبراني، أعتقد أن هذا المجال هو مستقبل التكنولوجيا وحماية المعلومات الرقمية." data-en="My primary goal is to become a professional in the field of cybersecurity, as I believe this field is the future of technology and the protection of digital information.">
-                        هدفي الأساسي هو أن أصبح محترفًا في مجال الأمن السيبراني، أعتقد أن هذا المجال هو مستقبل التكنولوجيا وحماية المعلومات الرقمية.
+                        هدفي الأساسي هو أن أصبح محترفًا في مجال الأمن السيبراني،عتقد أن هذا المجال هو مستقبل التكنولوجيا وحماية المعلومات الرقمية.
                     </p>
                     <p class="goals-text" data-ar="أنا شغوف بالتعلم المستمر ودائمًا مستعد لاكتساب مهارات جديدة. أحب التحديات وأراها فرصًا للنمو والتطور." data-en="I am passionate about continuous learning and always ready to acquire new skills. I love challenges and see them as opportunities for growth and development.">
                         أنا شغوف بالتعلم المستمر ودائمًا مستعد لاكتساب مهارات جديدة. أحب التحديات وأراها فرصًا للنمو والتطور.
@@ -423,10 +389,10 @@
 
             <section class="section" style="grid-column: 1 / -1;">
                 <h2 class="section-title" data-ar="فلسفتي الشخصية" data-en="Personal Philosophy">فلسفتي الشخصية</h2>
-                <p class="goals-text" data-ar="أؤمن بأن <span class='highlight'>التعلم المستمر</span> هو مفتاح النجاح في عالم التكنولوجيا سريع التطور. كل يوم هو فرصة جديدة لتعلم شيء جديد وتطوير مهاراتي." data-en="I believe that continuous learning is the key to success in the rapidly evolving world of technology. Every day is a new opportunity to learn something new and develop my skills.">
+                <p class="goals-text" data-ar="أؤمن بأن التعلم المستمر هو مفتاح النجاح في عالم التكنولوجيا سريع التطور. كل يوم هو فرصة جديدة لتعلم شيء جديد وتطوير مهاراتي." data-en="I believe that continuous learning is the key to success in the rapidly evolving world of technology. Every day is a new opportunity to learn something new and develop my skills.">
                     أؤمن بأن <span class="highlight">التعلم المستمر</span> هو مفتاح النجاح في عالم التكنولوجيا سريع التطور. كل يوم هو فرصة جديدة لتعلم شيء جديد وتطوير مهاراتي.
                 </p>
-                <p class="goals-text" data-ar="أنا دائمًا <span class='highlight'>مستعد للتعلم</span> أشياء جديدة واستكشاف مجالات جديدة في عالم الأمن السيبراني. شغفي بهذا المجال يدفعني للبقاء على اطلاع بأحدث التقنيات وممارسات الأمان." data-en="I am always ready to learn new things and explore new areas in the world of cybersecurity. My passion for this field drives me to stay updated with the latest technologies and security practices.">
+                <p class="goals-text" data-ar="أنا دائمًا مستعد للتعلم أشياء جديدة واستكشاف مجالات جديدة في عالم الأمن السيبراني. شغفي بهذا المجال يدفعني للبقاء على اطلاع بأحدث التقنيات وممارسات الأمان." data-en="I am always ready to learn new things and explore new areas in the world of cybersecurity. My passion for this field drives me to stay updated with the latest technologies and security practices.">
                     أنا دائمًا <span class="highlight">مستعد للتعلم</span> أشياء جديدة واستكشاف مجالات جديدة في عالم الأمن السيبراني. شغفي بهذا المجال يدفعني للبقاء على اطلاع بأحدث التقنيات وممارسات الأمان.
                 </p>
             </section>
@@ -471,38 +437,6 @@
             });
         }
 
-        function handlePhotoUpload(event) {
-            const file = event.target.files[0];
-            if (file && file.type.startsWith('image/')) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    const profileImage = document.getElementById('profileImage');
-                    const profileIcon = document.getElementById('profileIcon');
-                    const imageData = e.target.result;
-                    
-                    // Save to localStorage
-                    localStorage.setItem('profileImage', imageData);
-                    
-                    // Display the image
-                    profileImage.src = imageData;
-                    profileImage.style.display = 'block';
-                    profileIcon.style.display = 'none';
-                };
-                reader.readAsDataURL(file);
-            }
-        }
-
-        // Load saved image on page load
-        function loadSavedImage() {
-            const savedImage = localStorage.getItem('profileImage');
-            if (savedImage) {
-                const profileImage = document.getElementById('profileImage');
-                const profileIcon = document.getElementById('profileIcon');
-                profileImage.src = savedImage;
-                profileImage.style.display = 'block';
-                profileIcon.style.display = 'none';
-            }
-        }
 
         // Auto-save contact info changes
         document.addEventListener('DOMContentLoaded', function() {
@@ -529,11 +463,8 @@
             });
         });
 
-        // Load saved image when page loads
+        // Add interactive animations
         document.addEventListener('DOMContentLoaded', function() {
-            loadSavedImage();
-            
-            // Add interactive animations
             const sections = document.querySelectorAll('.section');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
